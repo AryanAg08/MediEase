@@ -23,7 +23,8 @@ Route.post("/login", async (req, res) => {
     //   const{Pas,...others}= RR1;
     const Da = {
         username,
-        email: qq.email
+        email: qq.email,
+        id: Id
     }
       res.cookie("accessToken",token,{
         HttpOnly:true,
