@@ -27,7 +27,7 @@ Route.post("/login", async (req, res) => {
     }
       res.cookie("accessToken",token,{
         HttpOnly:true,
-        expires: 28*24*60*60 *1000,  
+       // expires: 28*24*60*60 *1000,  
       }).status(200).json(Da);
     }
 }
