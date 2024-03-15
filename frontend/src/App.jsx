@@ -1,5 +1,5 @@
 import {Route, Routes } from "react-router-dom";
-import { HomePage } from "./pages/index"
+import { HomePage, Login } from "./pages/index"
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       
     <Routes>
       <Route exact path="/" element={<HomePage/>} />
-      {/* <Route exact path="/login" element={<Login/>} /> */}
+      <Route exact path="/login" element={<Login/>} />
       </Routes>   
     </>
   )
